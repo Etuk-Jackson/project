@@ -3,7 +3,7 @@ import forks from "../assets/forks.png"
 import infinity from "../assets/infinity.png"
 import Macbook from "../assets/Macbook.png"
 import Boards from "../assets/Boards.png"
-import CardD from "../assets/CardD.png"
+import CardD from "../assets/CardD.png";
 import CardC from "../assets/CardC.png"
 import CardB from "../assets/CardB.png"
 import CardA from "../assets/CardA.png"
