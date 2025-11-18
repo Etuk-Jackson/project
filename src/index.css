@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'graphik';
+    src: url('./fonts/GraphikBlack.otf');
+    font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.contentCard:nth-of-type(2) > div > button{
+  margin-top: -25px;
+  width: 190px;
+}
+
+.contentCard:nth-of-type(2) > img{
+  margin-top: -50px;
+}
+
+.contentCard > div > button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  
+}
+
+.gallery-image {
+  max-width: 100%; /* Ensure images are responsive */
+}
+
+.nav-container{
+  /* From https://css.glass */
+background: rgba(157, 156, 177, 0.47);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+border: 1px solid rgba(4, 4, 7, 0.774);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .testimonial{
+    grid-template-columns: 1fr;
+  }
+  
+  .heroH{
+    width: 310px;
+    height: 186px;
+    padding: 10px;
+    margin-top: -30px;
+
+  }
+
+  .contentCard:nth-of-type(2) {
+    gap: 52px
+  }
+
+  .try{
+    text-align: center;
+  }
+
+  .try > img{
+    padding: 13px;
+  }
+
+  .trybtn{
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+
+  .foot-links > div:nth-of-type(3){
+    margin-right: 30px;
+}
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+
+@media screen and (min-width: 1100px) {
+ 
+
+}
+
+
+
+/* Add this to your global CSS or in a style tag */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add this to your global CSS or in a style tag */
+@keyframes fadeInLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Base state - hidden until animated */
+.fade-element {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When animated class is added */
+.fade-element.animate-fadeIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered animation delays for grid items */
+.grid .fade-element:nth-child(1) { transition-delay: 0.1s; }
+.grid .fade-element:nth-child(2) { transition-delay: 0.2s; }
+.grid .fade-element:nth-child(3) { transition-delay: 0.3s; }
+.grid .fade-element:nth-child(4) { transition-delay: 0.4s; }
+.grid .fade-element:nth-child(5) { transition-delay: 0.5s; }
+.grid .fade-element:nth-child(6) { transition-delay: 0.6s; }
+
+/* Staggered animation for service sections */
+.space-y-24 > .fade-element:nth-child(1) { transition-delay: 0.1s; }
+.space-y-24 > .fade-element:nth-child(2) { transition-delay: 0.3s; }
+.space-y-24 > .fade-element:nth-child(3) { transition-delay: 0.5s; }
+.space-y-24 > .fade-element:nth-child(4) { transition-delay: 0.7s; }
