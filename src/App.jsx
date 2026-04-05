@@ -8,11 +8,13 @@ import Services from "./Pages/Services"
 import Login from "./Components/LogIn"
 import SignUp from "./Components/SignUp"
 import Contact from "./Pages/Contact"
+import ScrollToTop from "./Components/ScrollToTop"
 
 const App = () => {
   return (
     <div className='m-0 p-0 box-border  bg-black text-white overflow-hidden'>
       <NavBar/>
+      <ScrollToTop />
       <Routes>
         <Route path ='/' element={<Home/>}/>
         <Route path ='/about' element={<About/>}/>
