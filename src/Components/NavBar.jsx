@@ -6,6 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { AnimatePresence, motion } from "framer-motion";
 import { itemVariants, sideVariants } from '../Utils/Motion'
 import { navlinks } from '../Constants/Index'
+import logo from '../assets/logo.png'
 
 
 
@@ -141,7 +142,7 @@ const NavBar = () => {
             transition: { duration: 0.3 }
           }}
         >
-          <img src="src/assets/logo.png" alt="website logo" className='w-[full] h-12 cursor-pointer mt-1' />
+          <img src={logo} alt="website logo" className='w-[full] h-12 cursor-pointer mt-1' />
         </motion.div>
         
         <div className="flex items-center justify-between lg:w-[30%] md:w-[40%]">
@@ -189,7 +190,7 @@ const NavBar = () => {
         }}
       >
         <Link to="/">
-          <img src="src/assets/logo.png" alt="website logo" className='w-full pt-2 cursor-pointer' />
+          <img src={logo} alt="website logo" className='w-full pt-2 cursor-pointer' />
         </Link>
       </motion.div>
     </div>

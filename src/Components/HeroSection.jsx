@@ -2,6 +2,7 @@ import React from "react";
 import "aos/dist/aos.css"
 import AOS from 'aos'
 import { useEffect } from "react"
+import screens from '../assets/screens.png';
 
 // If you have the GIF in your assets folder, import it like this:
 // import backgroundGif from './assets/your-background.gif';
@@ -68,7 +69,7 @@ function HeroSection() {
           data-aos-delay="1200"
           data-aos-easing="linear"
           data-aos-duration='500'
-          src="src/assets/screens.png" 
+          src={screens} 
           alt="screenshots of app" 
           className="w-screen"
         />

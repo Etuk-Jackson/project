@@ -1,5 +1,8 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react';
+import download from '../assets/download.jpeg';
+import Data from '../assets/Data.jpeg';
+import mission from '../assets/mission.jpeg';
 
 const ScrollFadeSection = ({ children, delay = 0, direction = 'left' }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,7 +95,7 @@ const About = () => {
             
             {/* Image Placeholder - fades in from right */}
             <ScrollFadeSection delay={400} direction="right">
-              <img src="src\assets\download.jpeg " alt="Description" className="rounded-2xl h-80 w-full object-cover shrink-12" />
+              <img src={download} alt="Description" className="rounded-2xl h-80 w-full object-cover shrink-12" />
             </ScrollFadeSection>
           </div>
           
@@ -143,7 +146,7 @@ const About = () => {
             
             {/* Image Placeholder - fades right */}
             <ScrollFadeSection delay={500} direction="right">
-             <img  src="src\assets\Data.jpeg" alt="Description" className="rounded-2xl h-80 w-full object-cover" />
+             <img  src={Data} alt="Description" className="rounded-2xl h-80 w-full object-cover" />
             </ScrollFadeSection>
           </div>
 
@@ -151,7 +154,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-16 mb-20">
             {/* Image Placeholder - fades left */}
             <ScrollFadeSection delay={300} direction="left">
-               <img  src="src\assets\mission.jpeg" alt="Description" className="rounded-2xl h-80 w-full object-cover" />
+               <img  src={mission} alt="Description" className="rounded-2xl h-80 w-full object-cover" />
             </ScrollFadeSection>
             
             {/* Our Mission - text fades right */}
