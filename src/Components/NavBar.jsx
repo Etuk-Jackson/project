@@ -173,7 +173,7 @@ const NavBar = () => {
             className='w-[139px] h-[50px] rounded-[3px] border-2 border-white bg-transparent text-white font-bold text-center'
           >
             <AnimatedText text="" />
-             <a href="/login">Login</a>
+             <Link to="/login">Login</Link>
           </motion.button>
         </div>
       </nav>
@@ -287,7 +287,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-[150px] h-12 text-black bg-white font-bold rounded-xl mb-7 text-[14px] mr-[-2.8em]"
         >
-          <a href="/login">Get Started</a>
+          <Link to="/login">Get Started</Link>
         </motion.button>
       </motion.div>
     </motion.aside>

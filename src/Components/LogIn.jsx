@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -143,9 +144,9 @@ const Login = () => {
         {/* Optional Sign Up prompt */}
         <p className="text-center text-gray-400 text-sm mt-6 sm:mt-8 transition-all duration-700 delay-1200">
           Don't have an account?{" "}
-          <a href="/signup" className="text-white hover:underline transition duration-200">
+          <Link to="/signup" className="text-white hover:underline transition duration-200">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
